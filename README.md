@@ -1,0 +1,2 @@
+# stars
+display stars
