@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>display stars</title>
+    </head>
+    <body>
+        <input id="star" placeholder="number">
+        <button type="button" onclick="star()">display stars</button>
+        <script>
+            function star(){
+                var rows= Number(document.getElementById("star").value);
+                for(i=1;i<=rows;i++)
+                    {
+                        for(k=1;k<=(rows-i);k++)
+                        {
+                        document.write("&nbsp;");
+                        }
+                        for(j=1;j<=i;j++)
+                        {
+                        document.write("*");
+                        }
+                        document.write("<br>");
+                    }
+                    for(i=rows;i>=1;i--)
+                        {
+                        for(k=1;k<=(rows-i);k++)
+                        {
+                        document.write("&nbsp;");
+                        }
+                        for(j=1;j<=i-1;j++)
+                        {
+
+                        document.write("*");
+                        }
+                        document.write("<br>");
+                    }
+            }
+        </script>
+    </body>
+</html>
